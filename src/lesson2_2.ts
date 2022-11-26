@@ -1,10 +1,23 @@
 type User = {
   name: string;
   age: number;
-  group: string;
+  group?: string;
 };
 
-const persons: User[] = [
+type Admin = {
+  name: string;
+  age: number;
+  role?: string;
+}
+
+type Person = User | Admin;
+
+const persons: Person[] = [
+  {
+    name: 'Иван Ивановчи',
+    age: 23,
+    role: 'администратор'
+  },
   {
     name: 'Иван Петров',
     age: 27,

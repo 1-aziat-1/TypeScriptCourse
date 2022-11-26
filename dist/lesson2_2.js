@@ -1,6 +1,11 @@
 "use strict";
 const persons = [
     {
+        name: 'Иван Ивановчи',
+        age: 23,
+        role: 'администратор'
+    },
+    {
         name: 'Иван Петров',
         age: 27,
         group: 'SEO-специалист',
